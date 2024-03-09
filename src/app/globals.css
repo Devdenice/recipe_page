@@ -2,13 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --nutmeg: #854632;
+  --dark-raspberry: #7b284f;
+  --white: #ffffff;
+  --rose-white: #fff5fa;
+  --eggshell: #f3e6d8;
+  --light-grey: #e4ded8;
+  --wenge-brown: #5f574e;
+  --dark-charcoal: #302d2c;
 }
 
-@media (prefers-color-scheme: dark) {
+body {
+  background-color: #f3e6d8;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+}
+
+li {
+  list-style-type: disc;
+}
+
+ol li {
+  list-style: none;
+}
+
+span.numbers {
+  color: var(--nutmeg);
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+td.border-space {
+  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -30,4 +70,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
